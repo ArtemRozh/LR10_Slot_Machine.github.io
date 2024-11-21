@@ -10,13 +10,13 @@ let globalSpins = 0, globalCount = 0, totalInARow = 0, totalCount = 0;
 let isTyping = false;
 
 let slotImages = [
-    { value: 1, imgPath: "../IMG/orange.png" },
-    { value: 2, imgPath: "../IMG/grape.png" },
-    { value: 3, imgPath: "../IMG/cherries.png" },
-    { value: 4, imgPath: "../IMG/watermelon.png" },
-    { value: 5, imgPath: "../IMG/bar.png" },
-    { value: 6, imgPath: "../IMG/diamond.png" },
-    { value: 7, imgPath: "../IMG/777.png" }
+    { value: 1, imgPath: "IMG/orange.png" },
+    { value: 2, imgPath: "IMG/grape.png" },
+    { value: 3, imgPath: "IMG/cherries.png" },
+    { value: 4, imgPath: "IMG/watermelon.png" },
+    { value: 5, imgPath: "IMG/bar.png" },
+    { value: 6, imgPath: "IMG/diamond.png" },
+    { value: 7, imgPath: "IMG/777.png" }
 ];
 let availableImages = slotImages.slice();
 let res = [ ];
