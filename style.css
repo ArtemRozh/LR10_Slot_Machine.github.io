@@ -136,11 +136,11 @@ body{
 }
 
 .container-of-smth{
-    width: 20vh;
     height: 5vh;
     margin: 1%;
     background-color: gainsboro;
     border-radius: 20px;
+    padding: 0 2%;
 
     font-size: 2vw;
     display: flex;

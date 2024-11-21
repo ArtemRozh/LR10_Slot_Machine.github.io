@@ -5,6 +5,7 @@ const drawBtn = document.getElementById("drawBtn");
 const overlay = document.getElementById("overlay");
 const verdict = document.getElementById("verdict");
 const lowerContaier = document.getElementById("lowerContaier");
+const playerName = document.getElementById("playerName");
 let globalSpins = 0, globalCount = 0, totalInARow = 0, totalCount = 0;
 let isTyping = false;
 
@@ -19,6 +20,15 @@ let slotImages = [
 ];
 let availableImages = slotImages.slice();
 let res = [ ];
+
+let tempName = prompt("Введіть ваше ім'я. До 23 символів. Якщо не вміщується викорстовуйте абревіатури");
+if(tempName === null || tempName.trim() === "" || tempName.length >= 24){
+    playerName.innerHTML = "Default Player";
+    tempName = "Default Player";
+} else{
+    playerName.innerHTML = tempName.trim();
+}
+
 
 function slotSpin(slots, delay){
     let totalSpins = 0;
@@ -148,7 +158,7 @@ drawBtn.addEventListener("click", ()=>{
     slotSpin(slots2, 20);
     slotSpin(slots3, 40);
     drawBtn.disabled = true;
-    
+
     globalCount++;
     lowerContaier.innerText = `${globalCount} з 3`
 
